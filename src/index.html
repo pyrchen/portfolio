@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru" data-motion="running">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050509">
+  <title>pyrchen — Павел Юрченко, frontend & fullstack</title>
+  <meta name="description" content="Павел Юрченко — frontend- и fullstack-разработчик. Интерфейсы на Vue и React, анимация, API и интеграции.">
+  <link rel="icon" href="./neon-favicon.svg">
+  <link rel="preload" href="./assets/unbounded-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./assets/golos-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./v8/portfolio-v8.css">
+  <script src="./v8/portfolio-v8.js" type="module"></script>
+</head>
+<body>
+<canvas id="site-particles" aria-hidden="true"></canvas>
+<a class="skip" href="#motion">К содержимому</a>
+<header class="header wrap" id="top">
+  <a class="brand" href="#top" aria-label="pyrchen — начало"><svg viewBox="0 0 32 36" aria-hidden="true"><path d="M4 34V5h13c15 0 15 19 0 19H4M4 14h14"/></svg><span>pyrchen</span></a>
+  <nav aria-label="Основная навигация"><a href="#motion">Движение</a><a href="#skills">Что умею</a><a href="#activity">GitHub</a></nav>
+  <a class="header-contact" href="#contact">Написать мне <span aria-hidden="true">↗</span></a>
+</header>
+<main>
+  <section class="hero wrap" id="intro" aria-labelledby="hero-title">
+    <div class="hero-top"><p>Павел Юрченко<span>Минск, Беларусь</span></p><p>Frontend &amp; fullstack<span>Разработчик веб-приложений</span></p></div>
+    <div class="wordmark-area">
+      <div class="hero-orbit" data-parallax="0.045" aria-hidden="true"><i></i><i></i><i></i></div>
+      <h1 id="hero-title" aria-label="pyrchen"><span id="kinetic-word" tabindex="0" role="button" aria-label="Разобрать буквы pyrchen" aria-pressed="false"><span>p</span><span>y</span><span>r</span><span>c</span><span>h</span><span>e</span><span>n</span></span></h1>
+      <p class="word-hint" id="word-hint">Двойной клик — разобрать буквы</p>
+    </div>
+    <div class="hero-bottom"><p>Разрабатываю<br>веб-приложения.</p><div class="hero-summary">Пишу интерфейсы на Vue и React, добавляю анимацию,<br class="desktop-break"> подключаю API и разрабатываю серверную логику.</div><a href="#motion" class="circle-link" aria-label="Посмотреть 3D-сцену"><span aria-hidden="true">↓</span></a></div>
+  </section>
+
+  <section class="motion-section" id="motion" tabindex="-1" aria-labelledby="motion-title">
+    <span class="anchor legacy-anchor" id="work"></span><span class="anchor legacy-anchor" id="interface"></span><span class="anchor legacy-anchor" id="capabilities"></span>
+    <div class="motion-wash" aria-hidden="true"></div>
+    <div class="motion-copy wrap">
+      <div class="motion-heading" data-parallax="0.025"><p class="section-kicker">Интерактивная сцена</p><h2 id="motion-title">Движение<span aria-hidden="true">.</span></h2></div>
+      <div class="motion-controls"><p>Потяни фигуру,<br>чтобы повернуть.</p><button class="outline-button" id="toggle-scene">Разобрать форму <span aria-hidden="true">↗</span></button><div class="scene-state"><span id="scene-form-label">Узел</span><span class="scene-auto">Автосмена · 5 сек</span></div><p id="scene-note" role="status">Загрузка сцены…</p></div>
+    </div>
+    <div id="hero-stage" class="scene-stage"><canvas id="hero-canvas" tabindex="0" role="button" aria-pressed="false" aria-label="3D-скульптура. Двойной клик или Enter — разобрать и собрать." aria-describedby="scene-note"></canvas></div>
+    <div class="scene-caption wrap"><span class="scene-renderer">Three.js / WebGL</span><span class="scene-energy">Энергия 100%</span><a href="#activity" aria-label="Перейти к активности GitHub">К активности <span aria-hidden="true">↓</span></a></div>
+  </section>
+
+  <section class="activity-section wrap" id="activity" aria-labelledby="activity-title">
+    <div class="activity-heading"><div data-parallax="0.018"><p class="section-kicker">Последние три месяца</p><h2 id="activity-title">GitHub<span aria-hidden="true">↗</span></h2></div><p>Моя активность в открытых<br>и закрытых проектах.</p></div>
+    <div id="github-activity" data-github-activity aria-busy="true"><p class="github-activity-status" role="status">Загрузка статистики…</p></div>
+    <p class="activity-disclaimer">Мои коммиты в доступных ветках и PR, созданные PR и issues, ревью и комментарии. Даты — UTC. Это отдельный подсчёт рабочей активности, который отличается от календаря вкладов GitHub.</p>
+  </section>
+
+  <section class="skills wrap" id="skills" aria-labelledby="skills-title">
+    <div class="skills-intro"><h2 id="skills-title" data-parallax="0.018">С чем<br>ко мне.</h2><p>Могу взять frontend целиком: компоненты, сложные состояния, адаптивность и анимацию. Если задача шире — API, авторизацию, базы данных и интеграции.</p><a class="inline-link" href="#contact">Обсудить задачу <span aria-hidden="true">↗</span></a></div>
+    <div class="skill-list">
+      <details open><summary><h3>Интерфейсы</h3><span aria-hidden="true">+</span></summary><div><p>Разрабатываю личные кабинеты, редакторы и каталоги. Собираю общие компоненты, адаптирую экраны под телефон, настраиваю управление с клавиатуры.</p><p class="skill-stack">Vue / Nuxt, React / Next.js, TypeScript</p></div></details>
+      <details><summary><h3>Анимация и 3D</h3><span aria-hidden="true">+</span></summary><div><p>Анимирую переходы и смену состояний, делаю интерактивные сцены на Canvas и WebGL. Учитываю производительность устройства и настройки анимации пользователя.</p><p class="skill-stack">Canvas, WebGL, Spine, FLIP, View Transitions</p><a href="#motion">Посмотреть 3D-сцену</a></div></details>
+      <details><summary><h3>Логика приложения</h3><span aria-hidden="true">+</span></summary><div><p>Настраиваю поиск, фильтры и сложные формы. Сохраняю выбор в URL, работаю с кэшем. Продумываю поведение при загрузке, пустых результатах и ошибках запросов.</p><p class="skill-stack">Состояния, маршрутизация, формы, доступность</p></div></details>
+      <details><summary><h3>Серверная часть</h3><span aria-hidden="true">+</span></summary><div><p>Пишу API, авторизацию и разграничение доступа. Работаю с сессиями, двухфакторной проверкой и транзакциями. Обрабатываю повторные запросы без дублирования записей.</p><p class="skill-stack">Node.js, NestJS, PostgreSQL, Redis</p></div></details>
+      <details><summary><h3>Данные и интеграции</h3><span aria-hidden="true">+</span></summary><div><p>Подключаю внешние сервисы, пишу миграции и готовлю данные для аналитики. Настраиваю фоновые задачи, повторную обработку событий и восстановление после сбоев.</p><p class="skill-stack">SQL, dbt, фоновые задачи, интеграции</p></div></details>
+      <details><summary><h3>Скорость и запуск</h3><span aria-hidden="true">+</span></summary><div><p>Нахожу, что тормозит приложение: запросы, загрузка ресурсов или отрисовка. Проверяю изменения в браузере и с работающими сервисами, настраиваю CI и развёртывание.</p><p class="skill-stack">Профилирование, E2E, CI, контейнеры</p></div></details>
+    </div>
+  </section>
+
+  <section class="about wrap" id="about" aria-labelledby="about-title"><div><h2 id="about-title">Опыт</h2><p>В разработке с 2021 года. Сейчас работаю в Cobalt Lab. До этого — в TastyTeam и iTechArt.</p></div><a href="./assets/pavel-yurchenko-cv.pdf" target="_blank" rel="noopener" class="cv-link">Опыт работы<br>в резюме <span aria-hidden="true">↗</span></a></section>
+
+  <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+    <div class="contact-heading"><p>Нужен разработчик?</p><h2 id="contact-title">Обсудим<br>задачу.</h2><a class="telegram" href="https://t.me/pyrchen" target="_blank" rel="noopener">@pyrchen <span aria-hidden="true">↗</span></a><a class="email" href="mailto:pavel.yurchenko02@gmail.com">pavel.yurchenko02@gmail.com</a></div>
+    <form class="brief" id="brief"><h3>Что нужно сделать?</h3><p>Опиши задачу: что уже есть и какой результат нужен. Текст можно сохранить как черновик или скопировать для сообщения. Мне он автоматически не отправляется.</p><fieldset><legend class="sr-only">Что нужно сделать</legend><div class="brief-services"><label><input type="checkbox" name="service" value="frontend"><span>Интерфейс</span></label><label><input type="checkbox" name="service" value="motion"><span>Анимация</span></label><label><input type="checkbox" name="service" value="backend"><span>Backend</span></label><label><input type="checkbox" name="service" value="integration"><span>Интеграции</span></label><label><input type="checkbox" name="service" value="performance"><span>Оптимизация</span></label><label><input type="checkbox" name="service" value="product"><span>Новый проект</span></label></div></fieldset><label for="brief-text" class="sr-only">Описание задачи</label><textarea id="brief-text" rows="4" maxlength="2000" placeholder="Что хочешь сделать или изменить?"></textarea><div class="brief-actions"><button class="solid-button" id="save-brief" type="submit">Сохранить черновик</button><button id="copy-brief" type="button">Скопировать текст</button></div><p id="brief-status" role="status" aria-live="polite">Черновик сохраняется только в этом браузере.</p><p class="brief-technical">Сохраняется только на этом устройстве, в хранилище браузера. Ничего не отправляется на сервер. Не вводи пароли и конфиденциальные данные.</p></form>
+  </section>
+</main>
+<footer class="footer wrap"><a class="brand" href="#top">pyrchen<span class="brand-dot">.</span></a><a href="https://github.com/pyrchen" target="_blank" rel="noopener">GitHub</a><button id="motion-toggle" aria-pressed="false">Анимация: вкл</button><a href="#top">Наверх ↑</a></footer>
+<noscript><p class="wrap">Для интерактивной части нужен JavaScript. Контакты, навыки и резюме доступны без него.</p></noscript>
+</body></html>

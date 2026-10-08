@@ -1,0 +1,22 @@
+{
+  "name": "pyrchen-portfolio",
+  "version": "9.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal portfolio of Pavel Yurchenko",
+  "scripts": {
+    "start": "node preview.mjs",
+    "build": "node build.mjs",
+    "check": "node --check build.mjs && node --check preview.mjs && node --check src/portfolio-v8.js && node --check src/github-activity.js && node --check src/project-brief.js",
+    "test": "node --test tests/*.mjs"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
